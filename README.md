@@ -19,7 +19,7 @@
 
 </div>
 
-[**Watch Demo Video**](assets/trailer.mp4?raw=true) · [**View The Lookbook (PDF)**](assets/lookbook.pdf?raw=true)
+[**Watch Demo Video**](assets/trailer.mp4) · [**View The Lookbook (PDF)**](assets/lookbook.pdf)
 
 > 📌 **Showcase repository.** The app's source code is private. This repo shows what the app does, how it fits together at a high level, and what I learned building it.
 
@@ -93,7 +93,7 @@ The app shows its own build stats in the About card.
 - ⚡ **Faster AI:** cut photo processing from about 12 seconds to 1–3 seconds
 - 🧪 **Quality:** 84 automated tests in the companion app, plus code reviews before release
 - 🐛 **11 major bugs** found and fixed before the first public preview
-- 📚 **Documentation:** a 22-page build book and a 3-page member booklet, [The Lookbook (PDF)](assets/lookbook.pdf?raw=true)
+- 📚 **Documentation:** a 22-page build book and a 3-page member booklet, [The Lookbook (PDF)](assets/lookbook.pdf)
 - 🎬 **Brand and launch:** logo, edition naming, launch trailers and festival promo posters (made with AI-assisted tools)
 
 ---
