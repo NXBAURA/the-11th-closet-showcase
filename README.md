@@ -1,44 +1,67 @@
 <div align="center">
 
-<img src="assets/logo.png" width="110" alt="The 11th Closet logo" />
+<img src="assets/second-edition/app-icon.png" width="112" alt="The 11th Closet app icon, the Pleat Fan mark" />
 
 # The 11th Closet
-### The First Edition
+### The Second Edition
 
-**Snap your clothes. Build outfits. Get styled by AI.**
+**Your wardrobe, planned for the days ahead.**
+<br/>A local-first closet with an AI stylist, a festival calendar and a new look.
+
+**Launch date: 30 Oct 2026 · 1 PM IST**
 
 ![Android](https://img.shields.io/badge/Android-APK-3DDC84?logo=android&logoColor=white)
 ![Web](https://img.shields.io/badge/Web-PWA-6B2737)
 ![iPhone](https://img.shields.io/badge/iPhone-Home--screen%20app-000000?logo=apple&logoColor=white)
-![React Native](https://img.shields.io/badge/React%20Native-Expo-61DAFB?logo=react&logoColor=black)
+![Expo](https://img.shields.io/badge/Expo-SDK%2057-000020?logo=expo&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
-![Cloudflare](https://img.shields.io/badge/Cloudflare-Workers-F38020?logo=cloudflare&logoColor=white)
+![Cloudflare](https://img.shields.io/badge/Cloudflare-Workers%20%2B%20D1-F38020?logo=cloudflare&logoColor=white)
 ![Gemini](https://img.shields.io/badge/Google-Gemini-8E75B2)
 
-[**Live app**](https://theeleventhcloset.auto-tag.workers.dev) · [**Architecture**](docs/ARCHITECTURE.md) · [**Instagram**](https://instagram.com/the11thcloset.co)
+[**Live app**](https://theeleventhcloset.auto-tag.workers.dev) · [**What's new**](#whats-new-since-the-first-edition) · [**Architecture**](docs/ARCHITECTURE.md) · [**Instagram**](https://instagram.com/the11thcloset.co)
+
+**Editions:** **Second (current)** · [First](editions/first-edition/README.md)
 
 </div>
 
-[**Watch Demo Video**](assets/trailer.mp4) · [**View The Lookbook (PDF)**](assets/lookbook.pdf)
+> 📌 **Showcase repository.** The app's source code is private. This page shows what each edition does, how it fits together at a high level, and what I learned building it.
 
-> 📌 **Showcase repository.** The app's source code is private. This repo shows what the app does, how it fits together at a high level, and what I learned building it.
+> 🎬 **The Second Edition trailer and Lookbook** are on their way and will be added here.
 
 ---
 
 <p align="center">
-  <img src="assets/01-closet.png" width="23%" alt="Closet" />
-  <img src="assets/02-add-item.png" width="23%" alt="Add an item with AI tagging" />
-  <img src="assets/03-outfit-builder.png" width="23%" alt="Outfit builder with harmony meter" />
-  <img src="assets/04-stylist-chat.png" width="23%" alt="AI stylist chat" />
+  <img src="assets/second-edition/01-closet.png" width="19%" alt="Closet home with the glass header and occasion filters" />
+  <img src="assets/second-edition/02-onboarding.png" width="19%" alt="Onboarding with a year picker" />
+  <img src="assets/second-edition/03-stylist.png" width="19%" alt="AI stylist chat with occasion chips and a photo button" />
+  <img src="assets/second-edition/04-you.png" width="19%" alt="You tab with what's new in the Second Edition" />
+  <img src="assets/second-edition/05-about.png" width="19%" alt="Backup, privacy and the About card" />
 </p>
 
 ## At a glance
 
-| 3 | 2 | 68 | ~26 h | 43,000+ |
+| 2 | 3 | 97 | 91,000+ | 1,150+ |
 |:-:|:-:|:-:|:-:|:-:|
-| platforms | apps | commits | build time | lines of code |
+| editions | platforms | commits | lines of code | automated tests |
 
-*Built from 20 Sept 2026, live in a closed members' circle. Figures as of 26 Sept 2026, across the app and its private admin companion.*
+*Across the app and its private owner companion, as of 29 Oct 2026. Tests: 677 app, 210 control server, 96 AI server, 51 companion app, 118 end-to-end runs.*
+
+---
+
+## What's new since the First Edition
+
+| | The First Edition | The Second Edition |
+|---|---|---|
+| **Planning** | Event planner with a packing list | A full calendar (month, week, trips) with Indian festivals and looks planned for each day |
+| **Adding clothes** | One photo at a time | Mass upload: pick many photos, a background queue tags them, then you review |
+| **Stylist** | Text chat | Send a photo of an accessory and get 3 looks built around it, plus outfits for each occasion |
+| **Memory** | Likes and skips | The stylist remembers what you tell it, and you can see and edit what it remembers |
+| **Look** | 5 themes and an animated header | 14 themes, moving gradient "looks" and glass surfaces |
+| **Sign-in on iPhone** | Same as Safari | A one-time link code that moves sign-in from Safari to the home-screen app |
+| **Getting your closet back** | Manual restore | A "Bring your closet back" prompt: Drive backup, this phone's backup or a .closet file |
+| **Brand** | Wordmark | The new Pleat Fan mark, with a switch in settings to pick your app logo |
+| **Privacy** | Short policy | A new privacy policy, terms and delete-account page, with a consent screen on first launch |
+| **Behind the scenes** | Admin companion app | Fleet view, safe rollouts, AI limits and a kill switch in the owner control app |
 
 ---
 
@@ -46,55 +69,67 @@
 
 | | |
 |---|---|
-| 📸 **Snap and tag** | Take a photo. AI tags the item and cuts out the background. |
-| 👗 **Outfit builder** | Mix tops, bottoms and shoes with a live colour-harmony meter. |
-| ⭐ **Rated like a stylist** | Every outfit gets a score and a reason. |
-| 💬 **AI stylist chat** | Knows your wardrobe and today's weather. |
-| 📅 **Event planner** | Plan looks for a wedding or a trip, with an automatic packing list. |
-| 📊 **Know your wardrobe** | Closet value, cost per wear, most-worn pieces, items that need some love. |
-| 🎁 **Monthly Wrapped** | A shareable recap of your month in clothes. |
-| 🧠 **Learns your taste** | Likes and skips tune future suggestions. |
-| 🎨 **Adaptive themes** | Colours that follow your clothes, plus 5 hand-made themes. |
-| 👨‍👩‍👧 **Whole family** | Separate profiles in one app. |
-| 🗑️ **Safety net** | A 30-day "recently deleted" bin. |
-| ☁️ **Your data, your Drive** | Optional Google sign-in with backup to *your own* Drive, plus .closet file export. |
+| 📅 **Calendar and festivals** | Month and week views, trips with day-by-day looks, and festival cards for Durga Puja, Diwali, Chhath, Christmas and more. |
+| 📸 **Mass upload** | Add a whole shelf at once. A progress pill keeps going while you use the app, spots duplicates and skips failed photos. |
+| 💬 **Stylist with photos** | Attach a photo to the chat. Accessory photos come back as 3 complete looks. |
+| 🧠 **Stylist memory** | Things like "I don't wear yellow" are saved as notes that stay on your phone. |
+| 🎵 **Soundtrack** | Pin a song to an outfit. The song link stays on your phone. |
+| 🌦️ **City and weather** | Pick your city and state for local weather and festival dates. |
+| 🔔 **Gentle notifications** | Festival and plan reminders that you can turn off. |
+| 🪟 **Glass and gradients** | Glass tab bar, sheets and cards over moving gradient looks, with pull-to-refresh on the Pleat mark. |
+| 📱 **Home-screen widget** | Today's look on your Android home screen. |
+| 👗 **Everything from the First Edition** | Snap and tag, outfit builder, ratings, stats, Wrapped, family profiles, the 30-day bin and Drive backup. |
 
 ---
 
-## More screens
+## Looks
+
+Fourteen themes, from the house *Burgundy & Gold* to the new *Deep sea*, *Blue sky*, *Lagoon*, *Emerald* and *Orchid*, plus festive sets like *Zari Noir* and *Banarasi Rose*.
 
 <p align="center">
-  <img src="assets/05-rating.png" width="23%" alt="Outfit rating" />
-  <img src="assets/06-stats.png" width="23%" alt="Wardrobe stats" />
-  <img src="assets/07-events.png" width="23%" alt="Event planner and packing list" />
-  <img src="assets/08-wrapped.png" width="23%" alt="Monthly Wrapped" />
+  <img src="assets/second-edition/look-you-deep-sea.png" width="23%" alt="You tab in the Deep sea look" />
+  <img src="assets/second-edition/look-deep-sea.png" width="23%" alt="Closet in the Deep sea look" />
+  <img src="assets/second-edition/look-you-blue-sky.png" width="23%" alt="You tab in the Blue sky look" />
+  <img src="assets/second-edition/look-blue-sky.png" width="23%" alt="Closet in the Blue sky look" />
 </p>
 
-<!-- OPTIONAL: themes strip. Add assets/10-themes.png, then remove these comment markers.
-<p align="center"><img src="assets/10-themes.png" width="80%" alt="Five themes and auto theme" /></p>
--->
+![Burgundy](https://img.shields.io/badge/Burgundy-6B2737?style=flat-square)
+![Copper](https://img.shields.io/badge/Copper-C9955A?style=flat-square)
+![Deep sea](https://img.shields.io/badge/Deep%20sea-2A5E8C?style=flat-square)
+![Blue sky](https://img.shields.io/badge/Blue%20sky-6699E6?style=flat-square)
+![Lagoon](https://img.shields.io/badge/Lagoon-0F9CC2?style=flat-square)
+![Emerald](https://img.shields.io/badge/Emerald-22C79A?style=flat-square)
+![Orchid](https://img.shields.io/badge/Orchid-9678CE?style=flat-square)
 
-### Built-in proof
+Display type is Bodoni Moda; body type is DM Sans.
 
-The app shows its own build stats in the About card.
+---
+
+## The Pleat Fan mark
+
+The Second Edition has a new brand mark: a fan of pleats that opens on launch, spins while the app is thinking and closes when you're offline.
 
 <p align="center">
-  <img src="assets/09-about-card.png" width="30%" alt="About card showing commits, hours and lines of code" />
+  <img src="assets/second-edition/pleat-mark.svg" width="120" alt="The Pleat Fan mark" />
+  &nbsp;&nbsp;
+  <img src="assets/second-edition/pleat-sizes.png" width="46%" alt="The Pleat Fan mark at different sizes" />
 </p>
 
 ---
 
-## Accomplishments
+## Privacy, built in
 
-- 🚀 **Shipped a real product** to real users in a closed members' circle
-- 📱 **One codebase, three platforms:** Android, web and iPhone home-screen app
-- 🛠️ **Built two apps:** the user app and a private admin companion for Android and Windows
-- 🔔 **Production features:** push notifications, over-the-air updates, in-app feedback with screenshots and crash reports
-- ⚡ **Faster AI:** cut photo processing from about 12 seconds to 1–3 seconds
-- 🧪 **Quality:** 84 automated tests in the companion app, plus code reviews before release
-- 🐛 **11 major bugs** found and fixed before the first public preview
-- 📚 **Documentation:** a 22-page build book and a 3-page member booklet, [The Lookbook (PDF)](assets/lookbook.pdf)
-- 🎬 **Brand and launch:** logo, edition naming, launch trailers and festival promo posters (made with AI-assisted tools)
+<img align="right" src="assets/second-edition/06-consent.png" width="24%" alt="First-launch consent screen" />
+
+- **Local-first.** Your closet, photos, outfits, prices, wear history, calendar, stylist notes, songs and city stay on your device.
+- **Your own backup.** Optional backup goes to a hidden app folder in *your* Google Drive.
+- **Photos are processed, not stored.** AI photos pass through the server to Gemini and are not kept.
+- **Weather without tracking.** Your approximate location goes straight to the weather service, never to the app's server.
+- **No ads, no selling data.** You can see, fix or delete your data at any time, including deleting your whole account.
+
+Read the live [Privacy Policy](https://theeleventhcloset.auto-tag.workers.dev/privacy) and [Terms](https://theeleventhcloset.auto-tag.workers.dev/terms).
+
+<br clear="right"/>
 
 ---
 
@@ -102,26 +137,15 @@ The app shows its own build stats in the About card.
 
 | Layer | Tech |
 |---|---|
-| App | React Native + Expo, one codebase for Android, web and iPhone home-screen app |
+| App | React Native + Expo SDK 57, one codebase for Android, web and the iPhone home-screen app |
 | Language | TypeScript |
 | Data | On-device SQLite (local-first) |
 | AI | Google Gemini, called through a small cloud proxy so no API key ships in the app |
-| Cloud | Cloudflare Workers |
-| Builds | EAS (Android APK), Cloudflare (web) |
+| Cloud | Cloudflare Workers and D1, for AI limits, app status checks and the owner control app |
+| Owner app | A private companion for Android and Windows |
+| Builds | EAS (Android APK), over-the-air updates, Cloudflare (web) |
 
 More in [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
-
----
-
-## Design language
-
-![Ink](https://img.shields.io/badge/Ink-241318?style=flat-square)
-![Burgundy](https://img.shields.io/badge/Burgundy-6B2737?style=flat-square)
-![Rose](https://img.shields.io/badge/Rose-8A3549?style=flat-square)
-![Copper](https://img.shields.io/badge/Copper-C9955A?style=flat-square)
-![Deep](https://img.shields.io/badge/Deep%20Wine-3D1220?style=flat-square)
-
-Burgundy, copper and cream with glass cards and an animated gradient header. Display type is Bodoni Moda. Every screen carries the full brand line, "The 11th Closet · The First Edition".
 
 ---
 
@@ -130,10 +154,13 @@ Burgundy, copper and cream with glass cards and an animated gradient header. Dis
 | When | Milestone |
 |---|---|
 | 20 Sept 2026 | First commit |
-| 23 Sept | **Preview Model I:** first shareable build on Android, web and iPhone |
-| 24–25 Sept | Backup, wear log and value tracking, themes, admin companion app, push notifications |
-| 25–26 Sept | Event planner, Wrapped, style profile, in-app feedback, crash reports |
 | 27 Sept | **The First Edition** goes to the members' circle |
+| 14 Oct | Security and data-safety review: backups, imports, sign-out and the network layer hardened |
+| 16 Oct | Second Edition, phase 1: new backend for AI limits, festivals and the control app |
+| 22 Oct | Phase 2: calendar and festivals, mass upload, chat photos, new look, legal pages |
+| 23–28 Oct | Soundtrack, iPhone link sign-in, restore prompt, home widget, liquid glass |
+| 28–29 Oct | Pleat Fan mark, new legal pages, sky looks and launch fixes |
+| 30 Oct | **The Second Edition** goes to members |
 
 ---
 
@@ -141,26 +168,28 @@ Burgundy, copper and cream with glass cards and an animated gradient header. Dis
 
 | Challenge | Result |
 |---|---|
-| A real database in the browser | One local-first data layer on phone and web, with a friendly recovery screen if the browser blocks storage |
-| iPhone home-screen app quirks | Handled behaviours that differ from Safari; smoother iPhone sign-in is planned for The Second Edition |
-| Free AI quotas | Fallbacks and fair daily limits, with a friendly "That's all for today" message |
-| Slow photo processing | About 12 s down to 1–3 s |
-| Updating phones I can't touch | Over-the-air updates for app changes; new builds only when needed |
-| Catching bugs before users do | Reviews and fixes before every release |
+| Rolling out to phones I can't touch | Status checks, a minimum-build setting and a kill switch so a bad release can be stopped from the control app |
+| Fair AI limits that can't be faked | Limits are set by the server, not by the app |
+| Many photos at once | A background queue with retries, duplicate checks and a clear daily limit |
+| iPhone home-screen sign-in | A short-lived, one-time code that hands sign-in from Safari to the app |
+| Glass that stays smooth | Blur and gradients tuned to keep scrolling smooth, with plain fallbacks |
+| Privacy promises that hold | The privacy promises are checked by automated tests and a security review |
+| Catching bugs before members do | 1,150+ automated tests and a full end-to-end run before each release |
 
 ---
 
 ## Roadmap
 
-- **The Second Edition:** smoother iPhone sign-in, member reviews and more
 - Google Play release
+- More festival and regional looks
+- **The Third Edition**
 
 ---
 
 ## About the builder
 
 **Alind Kumar** (`snny.alind`), student developer from Ranchi, India.
-I build apps for real users and local businesses. This project was built with AI-assisted tools (Claude Code); I drive the design, decisions, testing and releases myself.
+I build apps for real users and local businesses, and I drive the design, decisions, testing and releases myself.
 
 - GitHub: [@NXBAURA](https://github.com/NXBAURA)
 - Instagram: [@the11thcloset.co](https://instagram.com/the11thcloset.co)
@@ -168,5 +197,7 @@ I build apps for real users and local businesses. This project was built with AI
 - LinkedIn: [Alind Kumar](https://www.linkedin.com/in/alind-kumar-08b436441/)
 
 ---
+
+<sub>Past editions: [The First Edition](editions/first-edition/README.md) (27 Sept 2026), with its [trailer](assets/first-edition/trailer.mp4) and [Lookbook (PDF)](assets/first-edition/lookbook.pdf).</sub>
 
 All rights reserved. See [LICENSE](LICENSE). No source code, credentials or internal configuration are included in this repository.
